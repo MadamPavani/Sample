@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+	
+	<class name = "com.pawana.bean.Student" table = "stud">
+		<id name = "sno" type = "java.lang.Integer">
+		<column name="s_no"/>
+		
+		</id>
+		<property name = "sname" type = "java.lang.String">
+			<column name="s_name" length = "10" not-null = "true" unique = "false"/>
+		</property>
+		<property name="ssal" type = "java.lang.Float">
+			<column name="s_sal" length = "20" not-null = "true" unique = "false"></column>
+		</property>
+		<property name="saddr" type = "java.lang.String">
+			<column name="s_addr" length = "20" not-null = "true" unique = "false"></column>
+		</property>
+	</class>
+</hibernate-mapping>
